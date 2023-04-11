@@ -9,8 +9,11 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.media.Image;
 import android.os.CountDownTimer;
+import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import java.util.LinkedList;
 
@@ -47,8 +50,8 @@ public class GameView extends View {
 
     Bird bird = new Bird(getResources());
 
-    public GameView(Context context) {
-        super(context);
+    public GameView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
         /*Example 9
         bird = BitmapFactory.decodeResource(getResources(), R.drawable.bird);
         list.add(new Rect(0,0, bird.getHeight(), bird.getHeight()));

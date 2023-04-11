@@ -95,7 +95,10 @@ public class MainActivity extends AppCompatActivity {
         };
         setContentView(view);*/
 
+        /*Example 7-10
         setContentView(new GameView(this));
+        */
+        setContentView(R.layout.activity_main);
 
     }
     /*Example 4 and 6
