@@ -59,6 +59,7 @@ public class GameView extends View {
         new CountDownTimer(Integer.MAX_VALUE, 50){
             @Override
             public void onTick(long millisUntilFinished) {
+                bird.move();
                 invalidate();
             }
             @Override
@@ -85,6 +86,7 @@ public class GameView extends View {
         /*Example 7
         invalidate();
         */
+        bird.setXY((int)event.getX(), (int)event.getY());
         return true;
     }
 }
