@@ -98,8 +98,9 @@ public class MainActivity extends AppCompatActivity {
         /*Example 7-10
         setContentView(new GameView(this));
         */
-        setContentView(R.layout.activity_main);
 
+        setContentView(R.layout.activity_main);
+        //setContentView(new GameSurfaceView(this));
     }
     /*Example 4 and 6
     @Override
